@@ -36,7 +36,6 @@
     <div class="row">
       <div class="col mt-5">
         <?php 
-        include("config.php");
 switch(@$_REQUEST["page"]){
   case "novo": 
     include("novo-usuario.php");
@@ -44,6 +43,9 @@ switch(@$_REQUEST["page"]){
   case "listar": 
     include("listar-usuario.php");
   break;
+  case "salvar":
+    include ("salvar-usuario.php");
+    break;
   default:
   print"<h1>Bem vindos!</h1>";
 }
