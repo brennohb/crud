@@ -1,9 +1,12 @@
 <?php 
-define('HOST', 'localhost');
-define('USER','root');
-define('PASS', '');
-define('BASE', 'cadastro');
+$db_name = 'cadastro';
+$db_host = 'localhost';
+$db_user = 'root';
+$db_pass = '';
 
-$conn = new mysqli(HOST,USER,PASS,BASE);
-
+try {
+  $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+} catch (\Throwable $th) {
+  throw $th;
+}
 ?>
