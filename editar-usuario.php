@@ -1,11 +1,12 @@
 <h1>Editar Usuário</h1>
 <?php 
-$sql = "SELECT * FROM usarios WHERE id=" .$_REQUEST["id"];
+$sql = "SELECT * FROM usuarios WHERE id=" .$_REQUEST["id"];
 $res = $conn->query($sql);
-$row = $res->fetch_obrject();
+$row = $res->fetch_object();
 ?>
 <form action="?page=salvar" method="POST">
-  <input type="hidden" name="acao" value="cadastrar">
+  <input type="hidden" name="acao" value="editar">
+  <input type="hidden" name="id" value="<?php print $row->id;?>">
   <div class="mb-3">
     <label>
       Nome
