@@ -44,7 +44,14 @@ if($res == true){
     break;
 
     case 'excluir':
-    # code...
+    $sql = "DELETE FROM usuarios WHERE id=" . $_REQUEST["id"];
+    if($res == true){
+  print "<script>alert('Excluido com sucesso');</script>";
+  print "<script>location.href='?page=listar';</script>";
+}else{
+   print "<script>alert('Não foi possivel excluir');</script>";
+  print "<script>location.href='?page=listar';</script>";
+}
     break;
 }
 ?>
