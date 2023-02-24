@@ -20,7 +20,7 @@ if($qtd>0){
     print "<td>".$row -> email."</td>";
     print "<td>" .$row -> data_nasc."</td>";
     print "<td>
-    <button onclick=\"location.href='?page=editar&id=".$row->id."';\" class='btn btn-success'>Editar</button>
+    <button onclick=\"location.href=?page=editar&id=".$row->id."';\" class='btn btn-success'>Editar</button>
     <button class='btn btn-danger'>Excluir</button>
     </td>";
     print "</tr>";
