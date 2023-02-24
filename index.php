@@ -46,10 +46,10 @@ switch(@$_REQUEST["page"]){
   break;
   case "salvar":
     include ("salvar-usuario.php");
-    break;
-    case "editar":
+  break;
+  case "editar":
     include ("editar-usuario.php");
-    break;
+  break;
   default:
   print"<h1>Bem vindos!</h1>";
 }
