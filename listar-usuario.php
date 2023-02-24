@@ -23,6 +23,7 @@ if($qtd>0){
     <button onclick=\"location.href=?page=editar&id=".$row->id."';\" class='btn btn-success'>Editar</button>
     
     <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href=?page=salvar&acao=excluir&id=".$row->id."';}else{false;}\"  class='btn btn-danger'>Excluir</button>
+    
     </td>";
     print "</tr>";
   }
