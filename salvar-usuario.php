@@ -11,7 +11,11 @@ switch ($_REQUEST["acao"]) {
     $res = $conn -> query($sql);
    break;
   
-  default:
+  case 'editar':
+    # code...
+    break;
+
+    case 'excluir':
     # code...
     break;
 }
